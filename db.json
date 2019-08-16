@@ -1,0 +1,25 @@
+{
+  "passengers": [
+    {
+      "fullName": "Stephen Curry",
+      "id": 1,
+      "checkedIn": true,
+      "baggage": "none",
+      "checkinDate": 1565829188015
+    },
+    {
+      "id": 2,
+      "fullName": "James Harden",
+      "checkedIn": true,
+      "checkinDate": null,
+      "baggage": ""
+    },
+    {
+      "id": 3,
+      "fullName": "Kevin Durant",
+      "checkedIn": true,
+      "checkinDate": null,
+      "baggage": ""
+    }
+  ]
+}
