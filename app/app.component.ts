@@ -1,14 +1,33 @@
 import { Component } from '@angular/core';
-import { ANY_STATE } from '@angular/compiler/src/private_import_core';
+import { extname } from 'path';
+
+interface Nav{
+  link:string,
+  name:string,
+  exact: boolean
+}
+
 @Component({
   selector: 'app-root',
   styleUrls: ['app.component.scss'],
-  template: `
-  <div class="app">
-    <passenger-viewer></passenger-viewer>
-  </div>
-  `
+  templateUrl: 'app.component.html'
 })
 export class AppComponent{
-  
+  nav : Nav[] = [
+    {
+      link:'/',
+      name:'Home',
+      exact:true
+    },
+    {
+      link:'/passengers',
+      name:'Passengers',
+      exact:true
+    },
+    {
+      link:'/oops',
+      name:'404',
+      exact:false
+    },    
+  ]
 }
